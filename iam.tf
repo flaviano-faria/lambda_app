@@ -18,7 +18,7 @@
     action        = "lambda:InvokeFunction"
     function_name = "arn:aws:lambda:us-east-1:920957086702:function:lambda_app"
     principal     = "apigateway.amazonaws.com"    
-    source_arn    = "arn:aws:execute-api:us-east-1:920957086702:vddw4g3j82/test-invoke-stage/POST/"
+    source_arn    = "arn:aws:execute-api:us-east-1:920957086702:${aws_api_gateway_rest_api.api.id}/test-invoke-stage/POST/"
   }
 
 
